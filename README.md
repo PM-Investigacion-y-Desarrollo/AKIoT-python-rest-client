@@ -1,3 +1,6 @@
+# REST-API-AKIOT
+Este repositorio es un fork del cliente ThingsBoard REST API y alberga scripts y utilidades para interactuar con la plataforma AKIOT mediante su API REST. Su objetivo es facilitar la gestión, la automatización y la integración con esta plataforma IoT personalizada, proporcionando ejemplos reutilizables para acelerar el desarrollo y las pruebas.
+
 # ThingsBoard Python REST API client
 
 
