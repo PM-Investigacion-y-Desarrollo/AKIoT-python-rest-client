@@ -44,19 +44,21 @@ def main():
             current_user = rest_client.get_user()
 
             # Creating Dashboard Group on the Tenant Level
+            # Creo una entidad de grupo de dashboards como EdificioDemo
             shared_dashboards_group = EntityGroup(name="Shared Dashboards", type="DASHBOARD")
             shared_dashboards_group = rest_client.save_entity_group(shared_dashboards_group)
             logging.info('Dashboard group created:\n%r\n', shared_dashboards_group)
-
+            
             # Loading Dashboard from file
             dashboard_json = None
-            with open("watermeters.json", "r") as dashboard_file:
+            with open("examples/testAPI/watermeters.json", "r") as dashboard_file:
                 dashboard_json = load(dashboard_file)
             dashboard = Dashboard(title=dashboard_json["title"], configuration=dashboard_json["configuration"])
             dashboard = rest_client.save_dashboard(dashboard)
             logging.info('Dashboard created:\n%r\n', dashboard)
 
             # Adding Dashboard to the Shared Dashboards Group
+            # Acá encontramos el dashboard que acabamos de crear y lo compartimos en el grupo, como se hizo con el dashboard Edificios DEMO se compartió a EdificioDemo
             dashboard = list(filter(lambda x: x.name == dashboard.name,
                                              rest_client.get_user_dashboards(10, 0).data))[0]
             rest_client.add_entities_to_entity_group(shared_dashboards_group.id, [dashboard.id.id])
@@ -66,7 +68,8 @@ def main():
             customer1 = rest_client.save_customer(body=customer1)
 
             # Creating Device
-            default_device_profile_id = rest_client.get_default_device_profile_info().id
+            # Estaria bueno poder leer los perfiles ya creados y elegir uno HC5NBIoT
+            default_device_profile_id = rest_client.get_default_device_profile_info().id 
             device = Device(name="WaterMeter 1", label="WaterMeter 1", device_profile_id=default_device_profile_id)
             device = rest_client.save_device(device)
             logging.info('Device created:\n%r\n', device)
@@ -74,12 +77,13 @@ def main():
             # Fetching automatically created "Customer Administrators" Group.
             customer1_administrators = rest_client.get_entity_group_by_owner_and_name_and_type(customer1.id, "USER", "Customer Administrators")
 
-            # Creating Read-Only Role
+            # Creating Read-Only Role in security
             read_only_role = Role(name="Read-Only", permissions=['READ', 'READ_ATTRIBUTES', 'READ_TELEMETRY', 'READ_CREDENTIALS'], type="GROUP")
             read_only_role = rest_client.save_role(read_only_role)
             logging.info('Role created:\n%r\n', read_only_role)
 
             # Assigning Shared Dashboards to the Customer 1 Administrators
+            # Aqui se comparte el dashboard al customer, como se compartió el dashboard Edificios DEMO al customer Cristian Aranda
             tenant_id = current_user.tenant_id
             group_permission = GroupPermission(role_id=read_only_role.id,
                                                name="Read Only Permission",

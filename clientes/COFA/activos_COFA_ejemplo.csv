@@ -1,0 +1,4 @@
+Name,Type,Label,cuit_farmacia,calleNumero,ciudad,provincia,codigoPostal,latitud,longitud,responsable,cargo,correo,celular,chat_id,token_telegram
+Famacia DEMO COFA,Farmacias COFA,Farmacias COFA,20-44267315-5,Av. Belgrano 869,CABA,Buenos Aires,CP1097,-34.61241902,-58.37865369,Fulano Peña,Dueño,fpenia@akribis.info,549 1177000200,-12345,8491771441:AAFneI93qwYSB_5Rz-WQEB0z6HIlKheWp_c
+Famacia TEST,Farmacias COFA,Farmacias COFA,20-45445464-5,Av. Paseo Colón 850,CABA,Buenos Aires,C1063ACV,-34.617778,-58.368056,Juan Corvalan,Gerente,carencibia@gmail.com,549 1125846546,1234,8491771879:AAFneI93qwYSB_5Rz-WQEB0z6HIlKheWp_c
+Farmacia CENTRO COFA 2,Farmacias COFA,Farmacias COFA,30-71234567-8,Calle Falsa 123,La Plata,Buenos Aires,B1900TVA,-34.921389,-58.354444,Fulano Peña,Dueño,fpenia@akribis.info,549 2215551234,-12345,8491771441:AAFneI93qwYSB_5Rz-WQEB0z6HIlKheWp_c
