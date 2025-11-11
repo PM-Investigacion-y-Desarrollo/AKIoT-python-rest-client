@@ -1,0 +1,5 @@
+name,type,label,token_acceso,address,punto_monitoreo,relacion,customer
+AKIOT0F882,HC5 NBIoT,Temperatura,282C0240F882,,default,Farmacia DEMO 1,
+AKIOT08AF3,HC5 NBIoT,Temperatura,282C02428AF3,,default,Farmacia DEMO 2,
+AKIOT08AF8,HC5 NBIoT,Temperatura x 2,282C02428AF8,,default,Farmacia DEMO 2,
+AKIOT08AF6,HC5 NBIoT,Temperatura,282C02428AF6,,default,Farmacia DEMO 3,
