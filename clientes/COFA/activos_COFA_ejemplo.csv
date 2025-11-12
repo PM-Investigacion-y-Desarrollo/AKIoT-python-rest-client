@@ -1,4 +1,4 @@
 Name,Type,Label,ID_farmacia,calleNumero,ciudad,provincia,codigoPostal,latitud,longitud,CUIT_farmacia,responsable_farmacias,cargo,correo,celular,chat_id,token_telegram
-Farmacia DEMO 1,Farmacias COFA,1,1,Av. Belgrano 869,CABA,Buenos Aires,CP1097,-34.61241902,-58.37865369,20-44267315-5,Fulano Peña,Dueño,fpenia@gmail.com,549 1177000200,-12345,8491771441:AAFneI93qwYSB_5Rz-WQEB0z6HIlKheWp_c
-Farmacia DEMO 2,Farmacias COFA,2,2,Av. Paseo Colón 850,CABA,Buenos Aires,C1063ACV,-34.7747389470128,-58.72534429387068,30-71234567-8,Juan Corvalan,Gerente,carencibia@gmail.com,549 1125846546,1234,8491771879:AAFneI93qwYSB_5Rz-WQEB0z6HIlKheWp_c
-Farmacia DEMO 3,Farmacias COFA,3,3,Calle 53,La Plata,Buenos Aires,B1900TVA,-34.921389,-58.354444,20-44267315-5,Fulano Peña,Dueño,fpenia@gmail.com,549 1177000200,-12345,8491771441:AAFneI93qwYSB_5Rz-WQEB0z6HIlKheWp_c
+Farmacia DEMO 1,Farmacias COFA,,0001,Av. Belgrano 869,CABA,Buenos Aires,CP1097,-34.61241902,-58.37865369,20-44267315-5,Fulano Peña,Dueño,fpenia@gmail.com,549 1177000200,-12345,8491771441:AAFneI93qwYSB_5Rz-WQEB0z6HIlKheWp_c
+Farmacia DEMO 2,Farmacias COFA,,0002,Av. Paseo Colón 850,CABA,Buenos Aires,C1063ACV,-34.7747389470128,-58.72534429387068,30-71234567-8,Juan Corvalan,Gerente,jcorvalan@gmail.com,549 1125846546,1234,8491771879:AAFneI93qwYSB_5Rz-WQEB0z6HIlKheWp_c
+Farmacia DEMO 3,Farmacias COFA,,0003,Calle 53,La Plata,Buenos Aires,B1900TVA,-34.921389,-58.354444,20-44267315-5,Ricardo Aranda,CEO,raranda@gmail.com,549 1177546565,-12395,6561771441:AAFneI93qwYSB_5Rz-WQEB0z6HIlKheWp_c
