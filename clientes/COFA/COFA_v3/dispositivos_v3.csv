@@ -1,5 +1,5 @@
 name,type,label,token_acceso,address,punto_monitoreo,relacion,customer
-AKIOT0F882,HC5 NBIoT,Temperatura,282C0240F882,,default,Farmacia DEMO 1,
-AKIOT08AF3,HC5 NBIoT,Temperatura,282C02428AF3,,default,Farmacia DEMO 2,
-AKIOT08AF8,HC5 NBIoT,Temperatura x 2,282C02428AF8,,default,Farmacia DEMO 2,
-AKIOT08AF6,HC5 NBIoT,Temperatura,282C02428AF6,,default,Farmacia DEMO 3,
+AKIOT08AF4,HC5 NBIoT,Temperatura,867207066133219,,Heladera 001,Farmacia DEMO 4,
+AKIOT08AEF,HC5 NBIoT,Temperatura,867207066762777,,Heladera 002,Farmacia DEMO 5,
+AKIOT08AF0,HC5 NBIoT,Temperatura,867207065953211,,Heladera 003,Farmacia DEMO 6,
+AKIOT08AF1,HC5 NBIoT,Temperatura,867207066706162,,Heladera 004,Farmacia DEMO 4,

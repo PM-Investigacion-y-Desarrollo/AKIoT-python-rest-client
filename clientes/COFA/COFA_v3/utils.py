@@ -3,14 +3,14 @@ from tb_rest_client.rest import ApiException
 import logging
 def creating_asset( rest_client,
                     name,
-                    id_farmacia,
+                    label,
                     profile_asset_to_use,
-                    customer,direccion,latitud,longitud,cuit_farmacia, responsable, correo, celular):
+                    customer,direccion,latitud,longitud,id_farmacia, responsable, correo, celular):
 
 
 # Creating an Asset
     
-    asset = Asset(name=name, label=id_farmacia,
+    asset = Asset(name=name, label=label,
                 asset_profile_id=profile_asset_to_use,
                 customer_id=customer.id)
     asset = rest_client.save_asset(asset)
@@ -25,7 +25,7 @@ def creating_asset( rest_client,
         "personaContacto": responsable,
         "telefono": celular,
         "identificador_farmacia": id_farmacia,
-        "cuit_farmacia": cuit_farmacia
+        "cuit_farmacia": label
 
     }
 
